@@ -15,7 +15,7 @@ configuration = [
     "application_name" : "Ubuntu",
     "ami" : "ami-0e472ba40eb589f49",
     "instance_type" : "t2.micro",
-    "no_of_instances" : "1"
+    "no_of_instances" : "3"
   }
   
 ]
