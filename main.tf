@@ -24,14 +24,7 @@ resource "aws_instance" "common" {
   
   ami           = each.value.ami
   instance_type = each.value.instance_type
-  //user_data = <<EOF
-//#!/bin/bash
-//echo "Changing the hostname to ${each.value.instance_name}"
-//hostname ${each.value.instance_name}
-//echo "${each.value.instance_name}" > /etc/hostname
-//EOF
-  //subnet_id = each.value.subnet_id
-  tags = {
+    tags = {
     Name = "${each.value.instance_name}"
   }
 }
